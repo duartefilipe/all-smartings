@@ -46,6 +46,10 @@ Com o servidor rodando, grava a bateria em CSV e calcula a variação em %/hora:
 
 Cada leitura abre uma conexão BLE curta; intervalos longos interferem menos no consumo do anel.
 
+## App Android
+
+A pasta [`android/`](android/README.md) tem um app Android (Kotlin, Compose) que conecta nos mesmos anéis e grava passos e FC no Health Connect, para Google Fit, Samsung Health etc.
+
 ## Onde ficam os dados
 
 Nada pessoal fica no repositório. Anéis conhecidos, logs e CSVs ficam em `%LOCALAPPDATA%\SmartRingCenter` (ou `~/.smartring` fora do Windows). A variável `SMARTRING_DATA` muda esse local. O perfil de calibração fica só no navegador.

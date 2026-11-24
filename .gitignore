@@ -1,0 +1,16 @@
+# Ambiente e build
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+
+# Dados pessoais e de dispositivos (ficam em %LOCALAPPDATA%\SmartRingCenter)
+*.csv
+*.log
+*.pid
+aneis_conhecidos.json
+
+# Versao antiga em PowerShell (referencia local)
+legacy/

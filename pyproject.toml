@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smartring"
+version = "0.1.0"
+description = "Painel local para aneis inteligentes BLE (YuCheng/R11M e Colmi/QRing R02/R03/R06)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["bleak>=0.22", "aiohttp>=3.9"]
+
+[project.scripts]
+smartring = "smartring.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+smartring = ["static/*"]
